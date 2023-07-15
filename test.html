@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Account Settings</title>
+  <link rel="icon" href="img/mdb-favicon.ico" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <!-- Jumbotron -->
+    <div class="p-3 text-center bg-white border-bottom">
+      <div class="container">
+        <div class="row gy-3">
+          <!-- Left elements -->
+          <div class="col-lg-2 col-sm-4 col-4">
+            <a href="https://mdbootstrap.com/" target="_blank" class="float-start">
+              <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
+            </a>
+          </div>
+          <!-- Left elements -->
+
+          <!-- Center elements -->
+          <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+            <div class="d-flex float-end">
+              <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i
+                  class="fas fa-user-alt m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">Sign in</p>
+              </a>
+              <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i
+                  class="fas fa-heart m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">Wishlist</p>
+              </a>
+              <a href="https://github.com/mdbootstrap/bootstrap-material-design"
+                class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i
+                  class="fas fa-shopping-cart m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">My cart</p>
+              </a>
+            </div>
+          </div>
+          <!-- Center elements -->
+
+          <!-- Right elements -->
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="input-group float-center">
+              <div class="form-outline">
+                <input type="search" id="form1" class="form-control" />
+                <label class="form-label" for="form1">Search</label>
+              </div>
+              <button type="button" class="btn btn-primary shadow-0">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Right elements -->
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <!-- Container wrapper -->
+      <div class="container justify-content-center justify-content-md-between">
+        <!-- Toggle button -->
+        <button class="navbar-toggler border py-2 text-dark" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+          <!-- Left links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#profile-section">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#all-orders-section">All Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#shipped-orders-section">Shipped Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#completed-orders-section">Completed Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#cancelled-orders-section">Cancelled Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="logout-link" href="https://www.youtube.com/">Logout</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+
+  <div class="container mt-5">
+    <div class="tab-content">
+
+      <div id="profile-section" class="tab-pane fade show active">
+        <div class="row justify-content-start">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Profile Settings</h5>
+                <form>
+                  <!-- Profile form fields -->
+                  <div class="form-outline mb-4">
+                    <input type="text" id="name" class="form-control" />
+                    <label class="form-label" for="name">Name</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control" />
+                    <label class="form-label" for="email">Email</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="password" class="form-control" />
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="confirm-password" class="form-control" />
+                    <label class="form-label" for="confirm-password">Confirm Password</label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-block">Update</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="all-orders-section" class="tab-pane fade">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card border mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Code Orders: 1</h5>
+                <form>
+                  <!-- All Orders form fields for Order 1 -->
+                  <div class="form-outline mb-4">
+                    <input type="text" id="name1" class="form-control" />
+                    <label class="form-label" for="name1">Name</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="tel" id="phone1" class="form-control" />
+                    <label class="form-label" for="phone1">Phone Number</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <textarea id="address1" class="form-control"></textarea>
+                    <label class="form-label" for="address1">Address</label>
+                  </div>
+
+                  <h6 class="card-subtitle mb-3">Order Details</h6>
+
+                  <div class="row mb-3">
+                    <div class="col-4">Name</div>
+                    <div class="col-4">Price</div>
+                    <div class="col-4">Quantity</div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-4">Product 1</div>
+                    <div class="col-4">$10</div>
+                    <div class="col-4">2</div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-4">Product 2</div>
+                    <div class="col-4">$20</div>
+                    <div class="col-4">1</div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-4">Product 3</div>
+                    <div class="col-4">$15</div>
+                    <div class="col-4">3</div>
+                  </div>
+
+                  <div class="text-end mb-4">
+                    <strong>Total: $95</strong>
+                  </div>
+
+                  <button type="button" class="btn btn-danger">Cancel</button>
+                </form>
+              </div>
+            </div>
+            <div class="card border mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Code Orders: 2</h5>
+                <form>
+                  <!-- All Orders form fields for Order 2 -->
+                  <div class="form-outline mb-4">
+                    <input type="text" id="name2" class="form-control" />
+                    <label class="form-label" for="name2">Name</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="tel" id="phone2" class="form-control" />
+                    <label class="form-label" for="phone2">Phone Number</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <textarea id="address2" class="form-control"></textarea>
+                    <label class="form-label" for="address2">Address</label>
+                  </div>
+
+                  <h6 class="card-subtitle mb-3">Order Details</h6>
+
+                  <div class="row mb-3">
+                    <div class="col-4">Name</div>
+                    <div class="col-4">Price</div>
+                    <div class="col-4">Quantity</div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-4">Product 1</div>
+                    <div class="col-4">$10</div>
+                    <div class="col-4">2</div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-4">Product 2</div>
+                    <div class="col-4">$20</div>
+                    <div class="col-4">1</div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-4">Product 3</div>
+                    <div class="col-4">$15</div>
+                    <div class="col-4">3</div>
+                  </div>
+
+                  <div class="text-end mb-4">
+                    <strong>Total: $95</strong>
+                  </div>
+
+                  <button type="button" class="btn btn-danger">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="shipped-orders-section" class="tab-pane fade">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Shipped Orders</h5>
+                <form>
+                  <!-- Shipped Orders form fields -->
+                  Shipped Orders
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="completed-orders-section" class="tab-pane fade">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Completed Orders</h5>
+                <form>
+                  <!-- Completed Orders form fields -->
+                  Completed Orders
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cancelled-orders-section" class="tab-pane fade">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cancelled Orders</h5>
+                <form>
+                  <!-- Cancelled Orders form fields -->
+                  Cancelled Orders
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-muted mt-3" style="background-color: #f5f5f5;">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start pt-4 pb-4">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-12 col-lg-3 col-sm-12 mb-2">
+            <!-- Content -->
+            <a href="https://mdbootstrap.com/" target="_blank" class="">
+              <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
+            </a>
+            <p class="mt-2 text-dark">
+              © 2023 Copyright: MDBootstrap.com
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-6 col-sm-4 col-lg-2">
+            <!-- Links -->
+            <h6 class="text-uppercase text-dark fw-bold mb-2">
+              Store
+            </h6>
+            <ul class="list-unstyled mb-4">
+              <li><a class="text-muted" href="#">About us</a></li>
+              <li><a class="text-muted" href="#">Find store</a></li>
+              <li><a class="text-muted" href="#">Categories</a></li>
+              <li><a class="text-muted" href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-6 col-sm-4 col-lg-2">
+            <!-- Links -->
+            <h6 class="text-uppercase text-dark fw-bold mb-2">
+              Information
+            </h6>
+            <ul class="list-unstyled mb-4">
+              <li><a class="text-muted" href="#">Help center</a></li>
+              <li><a class="text-muted" href="#">Money refund</a></li>
+              <li><a class="text-muted" href="#">Shipping info</a></li>
+              <li><a class="text-muted" href="#">Refunds</a></li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-6 col-sm-4 col-lg-2">
+            <!-- Links -->
+            <h6 class="text-uppercase text-dark fw-bold mb-2">
+              Support
+            </h6>
+            <ul class="list-unstyled mb-4">
+              <li><a class="text-muted" href="#">Help center</a></li>
+              <li><a class="text-muted" href="#">Documents</a></li>
+              <li><a class="text-muted" href="#">Account restore</a></li>
+              <li><a class="text-muted" href="#">My orders</a></li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-12 col-sm-12 col-lg-3">
+            <!-- Links -->
+            <h6 class="text-uppercase text-dark fw-bold mb-2">Newsletter</h6>
+            <p class="text-muted">Stay in touch with latest updates about our products and offers</p>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control border" placeholder="Email" aria-label="Email"
+                aria-describedby="button-addon2" />
+              <button class="btn btn-light border shadow-0" type="button" id="button-addon2"
+                data-mdb-ripple-color="dark">
+                Join
+              </button>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <div class="">
+      <div class="container">
+        <div class="d-flex justify-content-between py-4 border-top">
+          <!--- payment --->
+          <div>
+            <i class="fab fa-lg fa-cc-visa text-dark"></i>
+            <i class="fab fa-lg fa-cc-amex text-dark"></i>
+            <i class="fab fa-lg fa-cc-mastercard text-dark"></i>
+            <i class="fab fa-lg fa-cc-paypal text-dark"></i>
+          </div>
+          <!--- payment --->
+
+          <!--- language selector --->
+          <div class="dropdown dropup">
+            <a class="dropdown-toggle text-dark" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown"
+              aria-expanded="false"> <i class="flag-united-kingdom flag m-0 me-1"></i>English </a>
+
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Dropdown">
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English <i
+                    class="fa fa-check text-success ms-2"></i></a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
+              </li>
+            </ul>
+          </div>
+          <!--- language selector --->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
